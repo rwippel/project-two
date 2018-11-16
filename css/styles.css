@@ -1,55 +1,129 @@
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
 }
 
 header {
     width: 100%;
     padding: 20px 30px; 
     display: flex;
-    margin: 20px;   
   }
 
+  body {
+    background: url("../assets/background.png");
+  }
+
+  p {
+    text-align: center;
+    font-size: 22px;
+    padding: 25px;
+  }
 
 .socials {
   display: flex;
   margin-left: auto;
   flex-direction: column;
-  
+  align-items: center;
 }
 
-.card {
-    margin: 20px;
-    padding: 90px 40px;
+.social {
+  width: 35px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+#login {
+  border-right: solid 1px;
+  padding: 0 10px;
+}
+
+#register {
+  padding: 0px 10px;
+}
+
+.container {
+  border: 15px solid whitesmoke;
+  position: relative;
+  margin: 25px;
+
+}
+
+.sunflower {
     max-width: auto;
-    text-align: center;
-    background: darkgrey;
-    color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 2px; 
+    position: relative;
+    display: flex;
+    object-fit: contain;
+
+
   }
 
-  h3 {
-    background: grey;
-    padding: 20px 20px;
-    max-width: auto;
+  .arrows {
+    position: absolute;
+    width: 55px;
+  }
+
+#left {
+  left: -20px;
+  top: 250px;
+}
+
+#right {
+  left: 1300px;
+  top: 250px;
+}
+  .title {
+    color: white;
+    background-color: black;
+    background-blend-mode: lighten;
+    font-size: 20px;
+    width: auto;
+    padding: 10px 20px;
     text-align: right;
-    align-items: baseline;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
   }
 
 section {
-    margin: 45px auto;
-    padding: 10px;
-    background: #fff;
+    margin: 10px auto;
+    padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+    border: 5px;
     display: flex;
-	  flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-basis: auto;
   }
-
-
-img {
-  width: 25%;
+span {
+  font-size: 12px;
 }
+
+.pics {
+  width: 310px;
+  max-height: 200px;
+  object-fit: cover;
+  display: flex;
+  margin: 1%;
+}
+
+a:link {
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+
+}
+
+.button {
+  padding: 10px;
+}
+
 
 .recent {
     display: flex;
@@ -58,14 +132,21 @@ img {
      
   }
 
-  .view {
-    color: #fff;
-    padding: 5px;
+  #view {
     margin: 25px auto;	
-    background: grey;
     border-radius: 1px;
-    width: 200px;
     text-align: center;
+    background: url("../assets/az_subtle.png");
+    width: 325px;
+    padding: 10px;
+    border: red 5px solid;
+    color: white;
+    text-decoration: none;
+  }
+
+  #logo {
+    width: 150px;
+    height: auto;
   }
 
   .coming {
@@ -76,3 +157,82 @@ img {
     border-radius: 1px;
     text-align: center;
   }
+  #bird {
+    width: 25px;
+    text-align: center;
+  }
+
+  #leftfoot {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .lefttop {
+    display: flex;
+
+  }
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    background: url("../assets/footbackground.png");
+    background-blend-mode: darken;
+
+  }
+  .button2 {
+    padding: 8px;
+    align-items: center;
+  }
+
+   
+.rightpics {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+  .littlepics {
+    width: 90px;
+    max-height: 55px;
+    object-fit: cover;
+    display: flex;
+    padding: 3px;
+  }
+
+  .foot {
+    width: 31%;
+
+  }
+
+
+.search {
+}
+
+.searchTerm {
+  border: 3px solid #000000;
+  padding: 0px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+
+  height: 36px;
+  border: 1px solid red;
+  text-align: center;
+  color: ;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
